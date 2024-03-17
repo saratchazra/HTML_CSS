@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template id="myTem">
+        <div>
+            <h3>This is a product</h3>
+            <p>It can contain any description</p>
+        </div>
+    </template>
+</body>
+<script>
+    var template = document.getElementById('myTem');
+    var product1 = document.importNode(template.content, true);
+    product1.querySelector('h3').textContent = 'Product 1'
+    product1.querySelector('p').textContent = 'This is Product 1';
+    var product2 = document.importNode(template.content, true);
+    product2.querySelector('h3').textContent = 'Product 2'
+    product2.querySelector('p').textContent = 'This is Product 2';
+
+        document.body.appendChild(product1);
+        document.body.appendChild(product2);
+</script>
+</html>
