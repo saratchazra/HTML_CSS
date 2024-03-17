@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submituserdata.js" method="post" target="_blank" autocomplete="off"
+    enctype="multipart/form-data">
+        <input type="text" name="email" placeholder="Enter your email">
+        <input type="password" name="pwd" placeholder="Enter your password">
+        <input type="submit" value="Login">
+        <br><br>
+        <label for="">What is your age?</label>
+        <select name="userage" id="" size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <textarea name="message" id="" cols="30" rows="10" style="width: 100px; 
+        height: 100px; max-width: 100px; max-height: 100px; min-height: 100px; min-width: 100px;">
+        </textarea>
+        <br><br>
+        <button type="button" onclick="alert('Hey there')">Don't click</button>
+        <fieldset>
+            <legend>Login</legend>
+            <input type="text" name="email" placeholder="Enter your email" list="myname">
+            <datalist id="myname">
+                <option value="name1"></option>
+                <option value="name2"></option>
+                <option value="name3"></option>
+            </datalist>
+            <input type="password" name="pwd" placeholder="Enter your password">
+            <input type="submit" value="Login" formaction="/someotherpath">
+            </fieldset>
+    </form>
+</body>
+</html>
