@@ -1,0 +1,22 @@
+*{
+    margin: 10px;
+    padding:10px;
+}
+/* h1{
+    color : red;
+    font-size: 24px;
+
+}
+p{
+    color: blue;
+} */
+.myHead1{
+    color: red;
+}
+#mythirdelement{
+    color: green;
+}
+.myHead1,.myptag{
+    background-color: aqua;
+    margin: 10px;
+}
